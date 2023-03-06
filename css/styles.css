@@ -322,12 +322,12 @@ width: 168px;
      border: 1px solid #8E8F99
         
        }
-.customers-link:hover, .customers-link:focus {
+.customers-link:is(:hover, :focus) {
     color: var(--hov-focus-color);
-    background-color: var(--hov-focus-color);
+    border-color: var(--hov-focus-color);
 }
-.customers-link:is(:hover, :focus) .customers-link {
-    fill: white;}
+.customers-link:is(:hover, :focus) .customers-link { */
+     fill: var(--hov-focus-color);} 
 .customers-icon {
 
     fill: currentColor;
