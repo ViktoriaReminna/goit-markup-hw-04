@@ -8,6 +8,7 @@
     --dark-color: #2E2F42;
     --text-color: #434455;
     --accent-color: #E7E9FC;
+    --subtle-text-color: #8E8F99
     
 }
 h1, 
@@ -87,7 +88,7 @@ body {
      
 /*------------ Header------------- */
 .header {
-    border-bottom: 1px solid #E7E9FC;
+    border-bottom: 1px solid var(--accent-color);
 }
 .header-container {
     display: flex;
@@ -194,10 +195,37 @@ body {
 .qualities-item {
     min-width: 264px;
 }
+
    
 .qualities-list {
     display: flex;
+    
     gap: 24px;
+}
+
+
+
+.qualities-item {
+   
+}
+
+.qualities-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: var(--modal-overlay-color);
+    margin-bottom: 24px;
+
+}
+
+
+
+.qualities-icon {
+
+    fill: currentColor;
+    
 }
 .qualities-title {
     font-weight: 500;
@@ -269,6 +297,7 @@ padding-bottom: 120px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 .team-list {
     display: flex;
@@ -281,10 +310,41 @@ padding-bottom: 120px;
 .team-content {
     padding: 32px 16px;
     text-align: center;
-    background: #FFFFFF;}
+    background: var(--white-color)}
 .team-item{
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.team-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+
+.team-social-item {
+    width: 40px;
+    height: 40px;
+    }
+
+.team-social-link {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        color: var(--light-color);
+        background-color: var(--primary-brand-color);
+}
+.team-social-link:is(:hover, :focus) {
+   background-color: var(--hov-focus-color);
+
+}
+
+
+.team-social-icon {
+    fill: currentColor;
 }
 /* ------------------Customers------------------ */
 .customers {
@@ -318,16 +378,16 @@ width: 168px;
         align-items: center;
         width: 100%;
         height: 100%;
-        color: #8E8F99;
-     border: 1px solid #8E8F99
+        color: var(--subtle-text-color);
+     border: 1px solid var(--subtle-text-color);
         
        }
 .customers-link:is(:hover, :focus) {
-    color: var(--hov-focus-color);
     border-color: var(--hov-focus-color);
+    color: var(--hov-focus-color);
+   
 }
-.customers-link:is(:hover, :focus) .customers-link { */
-     fill: var(--hov-focus-color);} 
+
 .customers-icon {
 
     fill: currentColor;
@@ -368,11 +428,11 @@ width: 168px;
 }
 .main-btn {
     color: var(--primary-brand-color);
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--accent-color);
     border-radius: 4px;
     min-width: 69px;
     padding: 12px 24px;
-    background: #F4F4FD;
+    background: var(--light-color);
    
 }
 
@@ -407,6 +467,6 @@ width: 168px;
 }
 .services-content {
     padding: 32px 16px;
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--accent-color);
     border-top: 0;
 }
